@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Playlist</title>
+  <style>
+    body {
+      background-color: rgb(204, 204, 204);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px auto;
+      width: 200px; /* Centering the playlist container */
+    }
+    li {
+      margin: 5px 0;
+    }
+    li a {
+      text-decoration-line: none;
+      color: black;
+    }
+    .player_one,
+    .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    video,
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Main heading -->
+  <h1>My Playlist</h1>
+
+  <!-- Playlist container -->
+  <div>
+    <ul>
+      <li><a href="https://example.com/song1" target="_blank">Song 1</a></li>
+      <li><a href="https://example.com/song2" target="_blank">Song 2</a></li>
+      <li><a href="https://example.com/song3" target="_blank">Song 3</a></li>
+      <li><a href="https://example.com/song4" target="_blank">Song 4</a></li>
+      <li><a href="https://example.com/song5" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
+
+  <!-- Subheading -->
+  <h2>Now Playing...</h2>
+
+  <!-- Video Player Container -->
+  <div class="player_one">
+    <video controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+      <!-- Fallback text for browsers that do not support the video tag -->
+      Your browser does not support HTML video.
+    </video>
+  </div>
+
+  <!-- Another Subheading -->
+  <h2>MP3 songs</h2>
+
+  <!-- Audio Player Container -->
+  <div class="player_two">
+    <audio controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+      <!-- Fallback text for browsers that do not support the audio tag -->
+      Your browser does not support HTML audio.
+    </audio>
+  </div>
 
 </body>
-
 </html>
